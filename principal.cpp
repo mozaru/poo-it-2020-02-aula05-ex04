@@ -18,6 +18,17 @@ class TAluno
        float getNota1();
        float getNota2();
 };
+
+class TTurma
+{
+    private:
+       TAluno v[_MAX_];
+       int    qtd;
+    public:
+        void ler();
+        void listar();
+};
+
 void TAluno::ler()
 {
    cin.ignore();
@@ -47,16 +58,6 @@ float TAluno::getNota2()
    return nota2;
 }
 
-
-class TTurma
-{
-    private:
-       TAluno v[_MAX_];
-       int    qtd;
-    public:
-        void ler();
-        void listar();
-};
 void TTurma::ler()
 {
   cout << "Entre com a quantidade de aluno:";
